@@ -6,10 +6,11 @@ interface Props {
 
 const Hero = ({ imageAddress }: Props) => {
 	return (
-		<Box position="relative" height="60vh">
+		<Box position="relative" height="60vh" minHeight="400px">
 			<Box
 				bgImage={imageAddress}
 				bgRepeat="no-repeat"
+				bgPosition="center"
 				bgSize="cover"
 				top="0"
 				right="0"
