@@ -50,7 +50,7 @@ const NavBar = () => {
 				<Flex align="center" justify="space-between">
 					<NextLink href="/" passHref>
 						<Flex align="center">
-							<Image src="/bhh.png" alt="Logo" boxSize="40px" mr={4} />
+							<Image src="/dajohys-logo.jpg" alt="Logo" boxSize="40px" mr={4} />
 							<Box fontWeight="bold" fontSize="lg">
 								Dajohys Cleaning Inc.
 							</Box>

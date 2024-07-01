@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dajohys.com
+
+# Sitemaps
+Sitemap: https://dajohys.com/sitemap.xml
