@@ -1,5 +1,6 @@
-import { Box, Heading, Text, Flex, VStack, FormControl, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, VStack, FormControl, FormLabel, Input, Textarea, Button, AbsoluteCenter, Divider } from "@chakra-ui/react";
 import React from "react";
+import NextLink from "next/link";
 
 const ContactPage = () => {
 	return (
@@ -33,6 +34,18 @@ const ContactPage = () => {
 						<Button colorScheme="green" size="lg" width="full">
 							Send Message
 						</Button>
+						<Box position="relative" padding="10">
+							<Divider />
+							<AbsoluteCenter bg="white" px="4">
+								<Heading>OR</Heading>
+							</AbsoluteCenter>
+						</Box>
+						<Heading size="lg">Give us a Call!</Heading>
+						<NextLink href="tel:914-374-6961" passHref legacyBehavior>
+							<Button fontSize="2xl" color="brand.500" as="a" flex={1} variant="inline">
+								914-374-6961
+							</Button>
+						</NextLink>
 					</VStack>
 				</Box>
 			</Flex>
