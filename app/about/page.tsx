@@ -12,8 +12,8 @@ const AboutPage = () => {
 						Our Story
 					</Heading>
 					<Text fontSize="lg" color="gray.700" maxW="2xl">
-						DaJohys Cleaning Inc. offers exclusive Cleaning and Handyman services at affordable prices. We pride ourselves on providing high-quality
-						service and offer a quality guarantee on all services.
+						DaJohys Cleaning Inc. offers exclusive Cleaning services at affordable prices. We pride ourselves on providing high-quality service and
+						offer a quality guarantee on all services.
 					</Text>
 					<Text fontSize="lg" color="gray.700" maxW="2xl">
 						Small or large, your request will be met with expert advice, individualized attention, and innovative solutions. Contact us and discover
