@@ -1,3 +1,4 @@
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
@@ -29,6 +30,7 @@ const RootLayout = ({ children }: LayoutProps) => {
 			<head>{/* Any additional head elements */}</head>
 			<body>
 				<Providers>
+					<GoogleTagManager gtmId="GTM-THSHZNS8" />
 					<NavBar />
 					{children}
 					<BackToTop />
