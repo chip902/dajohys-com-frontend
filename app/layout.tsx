@@ -6,6 +6,7 @@ import { Providers } from "./Providers";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import PrivacyBanner from "./components/PrivacyBanner";
 
 const popppins = Poppins({
 	variable: "--font-poppins",
@@ -32,6 +33,7 @@ const RootLayout = ({ children }: LayoutProps) => {
 					{children}
 					<BackToTop />
 					<Footer />
+					<PrivacyBanner />
 				</Providers>
 			</body>
 		</html>

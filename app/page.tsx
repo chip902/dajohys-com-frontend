@@ -1,4 +1,4 @@
-import HomeHero from "./components/HomeHero";
+import Hero from "./components/Hero";
 import Spotlight from "./components/Spotlight";
 import HomeSubhero from "./components/HomeSubhero";
 
@@ -9,7 +9,7 @@ export default function Home() {
 		"We are driven by your satisfaction, providing a comprehensive range of cleaning services tailored to meet your needs. Our dedicated team delivers meticulous house cleaning, ensuring your home is always spotless and welcoming. For businesses, we offer professional commercial cleaning that maintains a pristine and productive work environment. Enjoy streak-free windows that brighten your space, deep carpet cleaning that restores your floors, and thorough move-in/move-out cleaning for seamless transitions. Post-construction clean-up is our specialty, clearing all dust and debris to leave your property safe and tidy. Additionally, our powerful steam cleaning services sanitize and refresh surfaces, eliminating dirt and allergens. Your satisfaction is our priority, and we strive to exceed your expectations with every service. Contact us today to experience unparalleled cleanliness and a revitalized space!";
 	return (
 		<>
-			<HomeHero />
+			<Hero imageAddress="url('/home_hero.webp')" />
 			<HomeSubhero />
 			<Spotlight title="Professional Cleaning" description={spotlight1} image="/pro_cleaning.jpg" link="/services" first="image" />
 			<Spotlight title="Family Run Business" description={spotlight2} image="/team.jpg" link="/about" first="text" />

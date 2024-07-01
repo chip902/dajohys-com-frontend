@@ -2,7 +2,7 @@
 import { Box, Grid, List, ListIcon, ListItem } from "@chakra-ui/react";
 import React from "react";
 import { MdCheckCircle } from "react-icons/md";
-import Hero from "./Hero";
+import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 
 const services = [
