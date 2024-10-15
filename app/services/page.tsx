@@ -28,7 +28,7 @@ const services = [
 	"One-time Service",
 ];
 
-const MotionBox = motion(Box);
+const MotionBox = motion.div;
 
 const ServicesPage = () => {
 	return (
