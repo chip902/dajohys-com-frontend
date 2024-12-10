@@ -1,5 +1,5 @@
 "use client";
-import { Box, Grid, List, ListIcon, ListItem } from "@chakra-ui/react";
+import { Grid, List, ListIcon, ListItem } from "@chakra-ui/react";
 import React from "react";
 import { MdCheckCircle } from "react-icons/md";
 import Hero from "../components/Hero";
