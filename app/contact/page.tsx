@@ -18,8 +18,22 @@ const ContactPage = () => {
 				</VStack>
 			</Flex>
 			<Flex justify="center">
-				<Box bg="white" p={8} borderRadius="lg" boxShadow="2xl" width="full" maxW="lg">
+				<Box bg="white" p={14} borderRadius="lg" boxShadow="2xl" width="full" maxW="xl">
 					<ContactForm />
+					<VStack spacing={4}>
+						<Box position="relative" padding="10">
+							<Divider />
+							<AbsoluteCenter bg="white" px="4">
+								<Heading>OR</Heading>
+							</AbsoluteCenter>
+						</Box>
+						<Heading size="lg">Give us a Call!</Heading>
+						<NextLink href="tel:914-374-6961" passHref legacyBehavior>
+							<Button fontSize="2xl" color="brand.500" as="a" flex={1} variant="inline">
+								914-374-6961
+							</Button>
+						</NextLink>
+					</VStack>
 				</Box>
 			</Flex>
 		</Box>
