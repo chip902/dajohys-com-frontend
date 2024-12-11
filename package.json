@@ -14,6 +14,7 @@
 		"@chakra-ui/react": "^2.8.2",
 		"@emotion/react": "^11.11.4",
 		"@emotion/styled": "^11.11.5",
+		"dotenv": "^16.4.7",
 		"framer-motion": "^11.2.12",
 		"next": "14.2.15",
 		"next-sitemap": "^4.2.3",
@@ -24,6 +25,7 @@
 	},
 	"devDependencies": {
 		"@next/third-parties": "^14.2.4",
+		"@sendgrid/mail": "^8.1.4",
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",

@@ -1,6 +1,7 @@
 import { Box, Heading, Text, Flex, VStack, FormControl, FormLabel, Input, Textarea, Button, AbsoluteCenter, Divider } from "@chakra-ui/react";
 import React from "react";
 import NextLink from "next/link";
+import ContactForm from "./ContactForm";
 
 const ContactPage = () => {
 	return (
@@ -18,35 +19,7 @@ const ContactPage = () => {
 			</Flex>
 			<Flex justify="center">
 				<Box bg="white" p={8} borderRadius="lg" boxShadow="2xl" width="full" maxW="lg">
-					<VStack spacing={4}>
-						<FormControl id="name">
-							<FormLabel>Your Name</FormLabel>
-							<Input type="text" />
-						</FormControl>
-						<FormControl id="email">
-							<FormLabel>Email Address</FormLabel>
-							<Input type="email" />
-						</FormControl>
-						<FormControl id="message">
-							<FormLabel>Your Message</FormLabel>
-							<Textarea />
-						</FormControl>
-						<Button colorScheme="green" size="lg" width="full">
-							Send Message
-						</Button>
-						<Box position="relative" padding="10">
-							<Divider />
-							<AbsoluteCenter bg="white" px="4">
-								<Heading>OR</Heading>
-							</AbsoluteCenter>
-						</Box>
-						<Heading size="lg">Give us a Call!</Heading>
-						<NextLink href="tel:914-374-6961" passHref legacyBehavior>
-							<Button fontSize="2xl" color="brand.500" as="a" flex={1} variant="inline">
-								914-374-6961
-							</Button>
-						</NextLink>
-					</VStack>
+					<ContactForm />
 				</Box>
 			</Flex>
 		</Box>
