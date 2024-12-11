@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import axios from "axios";
 import { useToast, Button, FormControl, FormLabel, Input, Textarea, VStack } from "@chakra-ui/react";
 
 const ContactForm = () => {
@@ -18,11 +19,7 @@ const ContactForm = () => {
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 		try {
-			const res = await fetch("/api/send-email", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
+			const res = await axios.post("/api/send-email", {
 				body: JSON.stringify({
 					to: "andrew@chip-hostingcom",
 					from: formData.email,
@@ -32,7 +29,7 @@ const ContactForm = () => {
 				}),
 			});
 
-			if (!res.ok) {
+			if (!res) {
 				toast({
 					title: "Message send failed.",
 					description: "There was a problem and your message was not set.",

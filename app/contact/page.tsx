@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, VStack, FormControl, FormLabel, Input, Textarea, Button, AbsoluteCenter, Divider } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, VStack, Button, AbsoluteCenter, Divider } from "@chakra-ui/react";
 import React from "react";
 import NextLink from "next/link";
 import ContactForm from "./ContactForm";
