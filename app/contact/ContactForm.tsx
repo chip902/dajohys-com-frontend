@@ -21,9 +21,9 @@ const ContactForm = () => {
 		try {
 			const res = await axios.post("/api/send-email", {
 				body: {
-					to: "Dajohys@gmail.com",
+					to: "DaJohys Cleaning Inc. <dajohys@gmail.com>",
 					from: `${formData.name} <${formData.email}>`,
-					subject: `Contact Form Submission from ${formData.name}`,
+					subject: `Website Form Submission from ${formData.name}`,
 					text: formData.message,
 					html: `<p>${formData.message}</p>`,
 				},
