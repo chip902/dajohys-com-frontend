@@ -20,16 +20,16 @@ const ContactForm = () => {
 		e.preventDefault();
 		try {
 			const res = await axios.post("/api/send-email", {
-				body: JSON.stringify({
+				body: {
 					to: "andrew@chip-hostingcom",
 					from: formData.email,
 					subject: `Contact Form Submission from ${formData.name}`,
 					text: formData.message,
 					html: `<p>${formData.message}</p>`,
-				}),
+				},
 			});
 
-			if (!res) {
+			if (res.status !== 200 && res.status !== 202) {
 				toast({
 					title: "Message send failed.",
 					description: "There was a problem and your message was not set.",
