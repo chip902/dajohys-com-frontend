@@ -21,8 +21,8 @@ const ContactForm = () => {
 		try {
 			const res = await axios.post("/api/send-email", {
 				body: {
-					to: "andrew@chip-hostingcom",
-					from: formData.email,
+					to: "Dajohys@gmail.com",
+					from: `${formData.name} <${formData.email}>`,
 					subject: `Contact Form Submission from ${formData.name}`,
 					text: formData.message,
 					html: `<p>${formData.message}</p>`,
@@ -66,15 +66,15 @@ const ContactForm = () => {
 		<form onSubmit={handleSubmit}>
 			<VStack spacing={4}>
 				<FormControl id="name" isRequired>
-					<FormLabel color="brand.200">Name</FormLabel>
+					<FormLabel color="brand.300">Name</FormLabel>
 					<Input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" />
 				</FormControl>
 				<FormControl id="email" isRequired>
-					<FormLabel color="brand.200">Email</FormLabel>
+					<FormLabel color="brand.300">Email</FormLabel>
 					<Input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" />
 				</FormControl>
 				<FormControl id="message" isRequired>
-					<FormLabel color="brand.200">Message</FormLabel>
+					<FormLabel color="brand.300">Message</FormLabel>
 					<Textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" />
 				</FormControl>
 				<Button type="submit" variant="outline" size="lg" mt={4} color="brand.300">

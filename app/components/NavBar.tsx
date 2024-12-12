@@ -21,22 +21,22 @@ const NavBar = () => {
 					</NextLink>
 					<Flex align="center">
 						<NextLink href="/" passHref>
-							<Button as="a" variant="linkNav" mx={3}>
+							<Button variant="linkNav" mx={3}>
 								Home
 							</Button>
 						</NextLink>
 						<NextLink href="/services" passHref>
-							<Button as="a" variant="linkNav" mx={3}>
+							<Button variant="linkNav" mx={3}>
 								Services
 							</Button>
 						</NextLink>
 						<NextLink href="/about" passHref>
-							<Button as="a" variant="linkNav" mx={3}>
+							<Button variant="linkNav" mx={3}>
 								About
 							</Button>
 						</NextLink>
 						<NextLink href="/contact" passHref>
-							<Button as="a" variant="linkNav" mx={3}>
+							<Button variant="linkNav" mx={3}>
 								Contact
 							</Button>
 						</NextLink>

@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
 		return new NextResponse("Request body is missing", { status: 400 });
 	}
 
-	const emailData = JSON.parse(body.body);
+	const emailData = body.body;
 
 	sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
