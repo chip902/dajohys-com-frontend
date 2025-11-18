@@ -22,10 +22,11 @@ const ContactForm = () => {
 			const res = await axios.post("/api/send-email", {
 				body: {
 					to: "DaJohys Cleaning Inc. <dajohys@gmail.com>",
-					from: `${formData.name} <${formData.email}>`,
-					subject: `Website Form Submission from ${formData.name}`,
-					text: formData.message,
-					html: `<p>${formData.message}</p>`,
+					from: "DaJohys Cleaning Inc. <no-reply@dajohys.com>",
+					replyTo: `${formData.name} <${formData.email}>`,
+					subject: `Website Form Submission from ${formData.name || "Website Visitor"}`,
+					text: `From: ${formData.name} <${formData.email}>\n\n${formData.message}`,
+					html: `<p>From: <strong>${formData.name}</strong> (${formData.email})</p><p>${formData.message}</p>`,
 				},
 			});
 

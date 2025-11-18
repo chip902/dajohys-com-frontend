@@ -33,19 +33,20 @@ export async function POST(req: NextRequest) {
 
 	sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
-	const { to, bcc, from, subject, text, html } = emailData;
-
-	// Log the email details for debugging
-	console.log("Email Details:", { to, bcc, from, subject, text, html });
+	const { to, bcc, from, replyTo, subject, text, html } = emailData;
 
 	const msg = {
 		to,
 		bcc,
-		from,
+		from: from || "DaJohys Cleaning Inc. <no-reply@dajohys.com>",
+		replyTo: replyTo || from,
 		subject,
 		text,
 		html,
 	};
+
+	// Log the email details for debugging
+	console.log("Email Details:", { to, bcc, from, subject, text, html });
 
 	try {
 		await sgMail.send(msg);
